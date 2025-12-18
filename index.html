@@ -1,41 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login & Register</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <div class="tabs">                           
-            <label class="tab active" for="login-tab">Login</label>
-            <label class="tab" for="register-tab">Register</label>
-        </div>
-
-        <div id="login-tab" class="tab-content active">
-            <h2>Login</h2>
-            <p>Login descriptions if necessary</p>
-            <input type="text" placeholder="Username or email" required>
-            <input type="password" placeholder="Password" required>
-            <a href="#">Forgot your password?</a>
-            <p>Some instructions if necessary</p>
-            <button>Login</button>
-            <p>Don't have any account yet? <a href="#" onclick="document.getElementById('register-tab').classList.add('active'); document.getElementById('login-tab').classList.remove('active');">Register</a></p>
-        </div>
-
-        <div id="register-tab" class="tab-content">
-            <h2>Register</h2>
-            <p>Registration descriptions if necessary</p>
-            <input type="text" placeholder="Surname" required>
-            <input type="text" placeholder="Username or email" required>
-            <input type="password" placeholder="Password" required>
-            <input type="password" placeholder="Confirm Password" required>
-            <p>Some instructions if necessary</p>
-            <button>Register</button>
-            <p>Already have an account? <a href="#" onclick="document.getElementById('login-tab').classList.add('active'); document.getElementById('register-tab').classList.remove('active');">Login</a></p>
-        </div>
-    </div>
-    <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vite-project</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
